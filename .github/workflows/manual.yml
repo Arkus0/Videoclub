@@ -1,7 +1,6 @@
 name: Ejecutar código Java
-run: java -cp . Pelicula.Main
 
-on: [push, pull_request] 
+on: [push, pull_request]
 
 jobs:
   run-java:
@@ -14,11 +13,11 @@ jobs:
       - name: Configurar Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin' 
-          java-version: '17' 
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Compilar el código
-        run: javac Main.java
+        run: javac -d . Pelicula/Main.java
 
       - name: Ejecutar el código
-        run: java Main
+        run: java Pelicula.Main
