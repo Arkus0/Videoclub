@@ -1,7 +1,5 @@
-package Pelicula;
-
 import java.util.*;
-
+class Main {
 class Pelicula {
     private String titulo;
 
@@ -289,5 +287,5 @@ public class Main {
         videoclub.mostrarMenu();
     }
 }
-
+}
 
