@@ -1,4 +1,4 @@
-name: Ejecutar código Java
+name: Ejecutar código Javac
 
 on: [push, pull_request]
 
