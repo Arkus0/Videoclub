@@ -1,0 +1,23 @@
+name: Ejecutar código Java
+
+on: [push, pull_request] # Ejecuta el workflow en cada push o PR
+
+jobs:
+  run-java:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin' # Usamos Temurin JDK (puedes cambiarlo a otro)
+          java-version: '17' # Puedes cambiar a 11, 8, etc.
+
+      - name: Compilar el código
+        run: javac Main.java
+
+      - name: Ejecutar el código
+        run: java Main
