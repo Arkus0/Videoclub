@@ -1,6 +1,7 @@
 name: Ejecutar código Java
+run: java -cp . Pelicula.Main
 
-on: [push, pull_request] # Ejecuta el workflow en cada push o PR
+on: [push, pull_request] 
 
 jobs:
   run-java:
@@ -13,8 +14,8 @@ jobs:
       - name: Configurar Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin' # Usamos Temurin JDK (puedes cambiarlo a otro)
-          java-version: '17' # Puedes cambiar a 11, 8, etc.
+          distribution: 'temurin' 
+          java-version: '17' 
 
       - name: Compilar el código
         run: javac Main.java
