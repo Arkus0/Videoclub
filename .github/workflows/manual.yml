@@ -17,7 +17,7 @@ jobs:
           java-version: '17'
 
       - name: Compilar el código
-        run: javac -d . Pelicula/Main.java
+        run: javac -d . Main.java
 
       - name: Ejecutar el código
-        run: java Pelicula.Main
+        run: java Main
