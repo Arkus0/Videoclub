@@ -1,5 +1,5 @@
 import java.util.*;
-Public class Main {
+public class Main {
 }
 class Pelicula {
     private String titulo;
