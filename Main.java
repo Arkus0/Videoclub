@@ -1,6 +1,4 @@
 import java.util.*;
-public class Main {
-}
 class Pelicula {
     private String titulo;
 
