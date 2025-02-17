@@ -1,5 +1,5 @@
 import java.util.*;
-class Main {
+Public class Main {
 }
 class Pelicula {
     private String titulo;
@@ -282,7 +282,7 @@ class Videoclub {
     }
 }
 
-public class Main {
+public class Ma1 {
     public static void main(String[] args) {
         Videoclub videoclub = new Videoclub();
         videoclub.mostrarMenu();
