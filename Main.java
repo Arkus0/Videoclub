@@ -282,7 +282,7 @@ class Videoclub {
     }
 }
 
-public class Ma1 {
+public class Main {
     public static void main(String[] args) {
         Videoclub videoclub = new Videoclub();
         videoclub.mostrarMenu();
